@@ -52,7 +52,7 @@ Run the `runexamples.sh` script to run the examples (requires [bash](https://www
 ## Documentation
 For more information, check out [deeplearning4j.org](http://deeplearning4j.org/) and its [JavaDoc](https://deeplearning4j.org/docs/latest/).
 
-`GradientsListenerExample.java` in dl4j-examples/src/main/java/org/deeplearning4j/examples/userInterface uses JavaFX. If you're using Java 8 or greater, it should run as is.  If you're using Java 7 or an earlier version, you should set JAVAFX_HOME to point to the root directory of the JavaFX 2.0 SDK.
+`GradientsListenerExample.java` in `dl4j-examples/src/main/java/org/deeplearning4j/examples/userInterface` uses JavaFX. If you're using Java 8 or greater, it should run as is.  If you're using Java 7 or an earlier version, you should set `JAVAFX_HOME` to point to the root directory of the JavaFX 2.0 SDK.
 
 
 ### Known issues with JavaFX
@@ -83,7 +83,7 @@ If you are using OpenJDK, on Ubuntu 16, you can install OpenJFX with `sudo apt-g
 
 The Sun version of JDK8 still comes with its own JavaFX, so that there should be no need to configure anything particular there and the build will succeed. If using OpenJDK8, you will still have to install OpenJFX and set `JAVAFX_HOME`, but the maven-enforcer plugin will not catch you — the reason being that it's difficult to distinguish between OpenJDK and Sun's JDK since version 8, with both adoptiong the same Vendor ID.
 
-If you are using OpenJDK 8, install OpenJFX and set JAVAFX_HOME as indicated above. Compile with `mvn clean install -POpenJFX`
+If you are using OpenJDK 8, install OpenJFX and set `JAVAFX_HOME` as indicated above. Compile with `mvn clean install -POpenJFX`
 
 ## Other Issues
 
